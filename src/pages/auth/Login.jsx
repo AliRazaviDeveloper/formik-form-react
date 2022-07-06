@@ -39,6 +39,7 @@ const Login = () => {
     initialValues,
     onSubmit,
     validationSchema,
+    validateOnMount: true,
   });
 
   return (
@@ -151,7 +152,8 @@ const Login = () => {
         <div className="flex flex-col gap-3 w-full mb-3">
           <button
             type="submit"
-            className="text-sm text-white bg-purple-500 rounded-md py-2 px-4"
+            disabled={!formik.isValid}
+            className="text-sm text-white bg-purple-500 rounded-md py-2 px-4 disabled:bg-slate-300 "
           >
             ثبت نام
           </button>

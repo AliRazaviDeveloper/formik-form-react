@@ -44,10 +44,10 @@ const Register = () => {
   });
 
   return (
-    <div className="max-w-screen-lg  mx-auto mt-5">
+    <div className="md:max-w-screen-lg  md:mx-auto md:mt-5 w-full">
       <form
         onSubmit={formik.handleSubmit}
-        className="bg-white py-2 px-4 shadow-sm w-8/12 flex justify-center mx-auto flex-col gap-5"
+        className="bg-white py-5 px-6 shadow-sm md:w-8/12 flex justify-center mx-auto flex-col gap-5 w-full"
       >
         <Input
           label="username"

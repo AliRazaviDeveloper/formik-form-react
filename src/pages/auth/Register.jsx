@@ -51,43 +51,50 @@ const Register = () => {
       >
         <Input
           label="username"
-          nameFa="نام کاربری را وارد کنید ..."
-          labelName=" نام کاربری"
+          placeholder="نام کاربری را وارد کنید ..."
           type="text"
           formik={formik}
-        />
+        >
+          نام کاربری
+        </Input>
 
         <Input
           label="phoneNumber"
-          nameFa="شماره موبایل خود را وارد کنید ..."
-          labelName="شماره موبایل"
+          placeholder="شماره موبایل خود را وارد کنید ..."
           type="text"
           formik={formik}
-        />
+        >
+          شماره موبایل
+        </Input>
 
         <Input
           label="email"
-          nameFa=" ایمیل خود را وارد کنید ..."
-          labelName=" ایمیل"
+          placeholder=" ایمیل خود را وارد کنید ..."
           type="email"
           formik={formik}
-        />
+        >
+          ایمیل
+        </Input>
 
         <Input
           label="password"
-          nameFa=" رمز عبور خود را وارد کنید ..."
+          placeholder=" رمز عبور خود را وارد کنید ..."
           labelName=" رمز عبور"
           type="password"
           formik={formik}
-        />
+        >
+          رمز عبور
+        </Input>
 
         <Input
           label="password_confirm"
-          nameFa=" تکرار رمز عبور خود را وارد کنید ..."
+          placeholder=" تکرار رمز عبور خود را وارد کنید ..."
           labelName=" تکرار رمز عبور"
           type="password"
           formik={formik}
-        />
+        >
+          تکرار رمز عبور
+        </Input>
 
         <div className="flex flex-col gap-3 w-full mb-3">
           <button
